@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-nama">
+        <img src="foto.jpg" alt="gambar" width="100" height="100" />
+        <div class="wrap-name">
+          <h1 id="halo">Halo saya Fajar Maulana.</h1>
+          <p>Seorang mahasiswa di ITERA</p>
+        </div>
+      </div>
+    </div>
+    <div class="navigasi">
+      <ul>
+        <li><a href="#tentangsaya">Tentang Saya</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#hubunginsaya">Hubungin Saya</a></li>
+      </ul>
+    </div>
+
+    <h2 id="tentangsaya">Tentang Saya</h2>
+    <div class="vidio">
+      <p class="vid">
+        Nama saya Fajar Maulana seorang mahasiswa program studi Teknik
+        Informatika di Institut Teknologi Sumatera. Saya berasal dari Provinsi
+        Sumatera Utara atau dikenal dengan Medan. Saya alumni SMAN 1
+        DOLOKBATUNANGGAR. Saya anak ke-3 dari 3 bersaudara, yang kata lain saya
+        adalah anak bungsu dari emak dan bapak saya. Saya lahir pada tanggal 19
+        Mei 2002, yang saat sekarang berumur 20 tahun.
+      </p>
+
+      <video controls width="400" height="200">
+        <source src="vidio.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <h2 id="pendidikan">Pendidikan</h2>
+    <table border="1">
+      <tr>
+        <th rowspan="2">No</th>
+        <th rowspan="2">Tingkat</th>
+        <th rowspan="2">Asal</th>
+        <th colspan="2">Waktu</th>
+      </tr>
+      <tr>
+        <th>Mulai</th>
+        <th>Selesai</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>SMP</td>
+        <td>SMP MUHAMMADIYAH</td>
+        <td>2014</td>
+        <td>2017</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>SMA</td>
+        <td>SMAN 1 DOBANA</td>
+        <td>2017</td>
+        <td>2020</td>
+      </tr>
+    </table>
+
+    <h2 id="hubunginsaya">Hubungin Saya</h2>
+    <div class="aboutme">
+      <label for="nama"> Nama : </label>
+      <input type="text" id="nama" />
+      <br />
+      <p>Sudah mengenal saya ?</p>
+      <div class="kenal">
+        <input type="radio" name="kenal" id="sudah" />
+        <label for="sudah">Sudah</label><br />
+        <input type="radio" name="kenal" id="tidak" />
+        <label for="tidak">Belum</label><br />
+      </div>
+      <br />
+      <p>Affah iyahh ?</p>
+      <div class="yes">
+        <input type="checkbox" id="a" /><label for="a">Yaa</label><br />
+        <input type="checkbox" id="b" /><label for="b">Yes</label><br />
+        <input type="checkbox" id="c" /><label for="c">Yapp</label><br />
+      </div>
+      <form class="klik">
+        <input type="submit" value="Kirim" />
+      </form>
+    </div>
+    <br />
+    <div class="footer">
+      <p id="end">The end</p>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
